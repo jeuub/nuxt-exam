@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <div class="header__logo">Роддом #5</div>
+    <div class="header__logo"><a href="/">Роддом #5</a></div>
     <ul class="header__list">
       <li class="header__item"><a href="/">Главная</a></li>
       <li class="header__item"><a href="/about">О нас</a></li>
@@ -50,6 +50,12 @@ export default {
   font-size: 24px;
   border-bottom: 1px solid black;
 }
+
+.header__logo a {
+  color: black;
+  text-decoration: none;
+}
+
 .header__item {
   padding: 7px 22px;
   border-radius: 8px;
