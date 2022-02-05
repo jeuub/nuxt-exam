@@ -12,6 +12,7 @@
             class="input"
             v-if="item.type !== 'select'"
             :type="item.type"
+            required
             :name="keys[i]"
             :id="keys[i]"
           />
