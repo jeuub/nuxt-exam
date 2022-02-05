@@ -46,13 +46,6 @@ export default {
     return {
       info: null,
       keys: null,
-      type: null,
-      departure_city: null,
-      departure_address: null,
-      destination_city: null,
-      destination_address: null,
-      weight: null,
-      volume: null,
     }
   },
   computed: {
@@ -64,7 +57,6 @@ export default {
     const data = await this.infoData
     this.info = data.data.fields
     this.keys = Object.keys(data.data.fields)
-    console.log(this.keys)
   },
   methods: {
     async send(e) {
@@ -75,7 +67,6 @@ export default {
       data.weight = e.target[2].value
       data.color = e.target[3].value
       data.sex = e.target[4].value
-      console.log(data)
       let resp = null
       try {
         resp = await axios.post(
@@ -88,8 +79,6 @@ export default {
       } catch (e) {
         console.log(e)
       }
-
-      console.log(resp)
     },
   },
 }
