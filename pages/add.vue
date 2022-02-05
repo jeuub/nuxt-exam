@@ -1,12 +1,6 @@
 <template>
   <div>
-    <form
-      v-if="info"
-      class="add"
-      @submit="send"
-      method="post"
-      action="https://demo-api.vsdev.space/api/delivery/sales"
-    >
+    <form v-if="info" class="add" @submit="send">
       <h1 class="heading">Добавления</h1>
       <label v-for="(item, i) in info" :key="i" class="label">
         {{ item.title }}
