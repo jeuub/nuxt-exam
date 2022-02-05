@@ -175,8 +175,9 @@ export default {
   flex-direction: column;
   max-width: 250px;
   justify-content: space-between;
-  border: 1px solid black;
   padding: 10px;
+  background: #f0e0d5;
+  border-radius: 12px;
 }
 
 .openform {
