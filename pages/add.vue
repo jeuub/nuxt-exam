@@ -76,10 +76,19 @@ export default {
       data.color = e.target[3].value
       data.sex = e.target[4].value
       console.log(data)
-      const resp = await axios.post(
-        'https://demo-api.vsdev.space/api/farm/baby',
-        data
-      )
+      let resp = null
+      try {
+        resp = await axios.post(
+          'https://demo-api.vsdev.space/api/farm/baby',
+          data
+        )
+        alert('Добавленно успешно')
+        e.target.reset()
+        location.reload()
+      } catch (e) {
+        console.log(e)
+      }
+
       console.log(resp)
     },
   },
