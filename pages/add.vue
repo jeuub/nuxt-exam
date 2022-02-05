@@ -180,6 +180,7 @@ export default {
 }
 
 .openform {
+  cursor: pointer;
   margin-left: 20px;
   padding: 7px 22px;
   border: none;
