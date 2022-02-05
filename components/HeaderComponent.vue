@@ -4,7 +4,7 @@
     <ul class="header__list">
       <li class="header__item"><a href="/">Главная</a></li>
       <li class="header__item"><a href="/about">О нас</a></li>
-      <li class="header__item"><a href="/add">Добавить</a></li>
+      <li class="header__item"><a href="/add">Наши малыши</a></li>
     </ul>
   </div>
 </template>
